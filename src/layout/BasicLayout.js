@@ -127,12 +127,13 @@ export default class BasicLayout extends React.PureComponent {
           }}
           className="layout-content"
         >
-          <Header
+        {/* 临时注释掉 */}
+          {/* <Header
             handleMenuCollapse={this.handleMenuCollapse}
             logo={logo}
             customHeader={customHeader}
             {...this.props}
-          />
+          /> */}
           <Content
             style={
               {

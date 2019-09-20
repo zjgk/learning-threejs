@@ -7303,6 +7303,11 @@ terser@^4.1.2:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
+three@^0.108.0:
+  version "0.108.0"
+  resolved "https://registry.npm.taobao.org/three/download/three-0.108.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fthree%2Fdownload%2Fthree-0.108.0.tgz#53d26597c7932f214bb43f4655e566d2058143b5"
+  integrity sha1-U9Jll8eTLyFLtD9GVeVm0gWBQ7U=
+
 through2@^2.0.0:
   version "2.0.5"
   resolved "https://registry.npm.taobao.org/through2/download/through2-2.0.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fthrough2%2Fdownload%2Fthrough2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"

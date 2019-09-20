@@ -23,7 +23,7 @@ module.exports = {
     contentBase: "./dist", //本地服务器所加载的页面所在的目录
     historyApiFallback: true, //不跳转
     inline: true, //实时刷新
-    port: 1208,
+    port: 8082,
     // open: true, //自动打开浏览器,
     hot: true, //开启热更新
     // hotOnly: true //尽管html功能没有实现，也不让浏览器刷新

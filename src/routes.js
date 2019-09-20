@@ -7,6 +7,7 @@ import { createBrowserHistory } from 'history';
 import Login from "pages/login/login.js";
 import Home from "pages/home/home.js";
 import Head from "pages/head/head.js";
+import Demo1 from "pages/three-demo/1.js";
 import GeeLayout from "./layout/GeeLayout";
 import CustomIcon from "components/CustomIcon";
 
@@ -35,9 +36,12 @@ const indexAuth = ["admin"];
 const Routes = () => (
   <Switch>
     <Route path="/login" component={Login} />
-
     <Route path="/"
       component={GeeLayout}  >
+      <Route path="/three" name="three"
+        authority={indexAuth} component={Demo1}
+        icon={<CustomIcon type="icon-tasklist" style={{ fontSize: 15 }} />}
+      />
       <Route path="/home"
         name="首页" authority={indexAuth} component={Home}
         icon={<CustomIcon type="icon-desktop-copy" style={{ fontSize: 15 }} />}
@@ -45,7 +49,7 @@ const Routes = () => (
       <Route path="/head" name="head行"
         authority={indexAuth} component={Head}
         icon={<CustomIcon type="icon-tasklist" style={{ fontSize: 15 }} />}
-        />
+      />
     </Route>
   </Switch>
 )
