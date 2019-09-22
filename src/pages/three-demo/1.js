@@ -13,7 +13,7 @@ export default class Demo1 extends React.PureComponent {
     var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    document.getElementById("three-output1").appendChild(renderer.domElement);
     var geometry = new THREE.BoxGeometry(1, 1, 1);
     var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
     var cube = new THREE.Mesh(geometry, material);
@@ -33,7 +33,7 @@ export default class Demo1 extends React.PureComponent {
     const { dataList = {} } = this.props;
     const { list = [] } = dataList;
     return (
-      <div>
+      <div id="three-output1">
         旋转盒子
         <Demo2/>
       </div>
